@@ -1,0 +1,149 @@
+% The DC/GTC report format is particularly created for M.S. and Ph.D. students at IITM. The idea is to encourage students to use Overleaf or other Latex compilers for creating a report. Since most of the students are unexposed to Latex, this will be an easy start to beginners which will eventually lead them to write their thesis, proposals and articles using Overleaf or Latex.
+
+% Please don't get bogged down by the commands used. These are simple commands and can be used for multiple reports. To start with please concentrate on filling the blank spaces or editing the current text. Once you get a feel for using the report, you can start modifying the commands if required. 
+
+% Please feel free to add or modify if required. If you have queries feel free to contact me at rameshkk@iitm.ac.in (Ramesh Kannan K)
+
+\documentclass[12pt]{article}
+\usepackage{times}
+\usepackage{babel}
+\usepackage{titling}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{natbib,etoolbox,lipsum,hyperref}
+
+
+\usepackage[%
+    left=2cm,%
+    right=2cm,%
+    top=3cm,%
+    bottom=3cm,%
+    paperheight=20cm,%
+    paperwidth=18cm,%
+]{geometry} % Page settings
+
+\begin{document}
+\begin{titlepage}
+
+
+\setlength{\droptitle}{-4em} 
+\center
+
+{\huge \bfseries A cross Platform Cryptography tool } % Title of the project
+\\[2cm] 
+
+
+\begin{minipage}{0.4\textwidth}
+\begin{center} \large
+Submitted by: \textbf{Mr. Tejas Dixit 
+                    Mr. Rushikesh Gaikwad 
+                       Mrs. Shrushti Gaikwad 
+                       Mrs. Jayshree } % Name of the student
+\\[0.5cm]
+\textbf{19210051} % Registration number of the student
+\end{center}
+\end{minipage} 
+
+%\addtolength{\droptitle}{-4pt}
+\vspace{10em}
+
+\includegraphics[width=6cm]{}
+
+\vspace{10em}
+\begin{minipage}{0.6\textwidth}
+\begin{center} \large
+\textbf{Genba Sopanrow Moze collage of engineering} % Name of the department
+\\[0.5cm]
+\textbf{Project Report} % Type of meeting
+\end{center}
+\end{minipage} 
+
+\vspace{5em}
+{\large \today}
+
+
+\end{titlepage}
+
+
+
+\newpage
+\begin{center}
+\title*{\LARGE \textbf{A cross platform cryptography tool}}       
+\end{center}
+
+
+\newpage
+\begin{center}
+\title*{\LARGE \textbf{Index}}
+
+
+\end{center}
+
+\begin{flushleft}
+\section*{\large {Introduction}}
+This is a cross-platform cryptography tool for privacy enhancement.
+My main goal is to provide a tool for people to protect their privacy.
+
+
+\end{flushleft}
+
+
+\newpage
+\begin{flushleft}
+\section*{\large {Literature review}}
+The studies carried out by \cite{Smith:2012} and \citep{Smith:2013}
+
+\end{flushleft}
+
+\begin{figure}[structure.jpeg]
+    \centering
+    \includegraphics[width=10cm]{image_1.jpg}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+\newpage
+\begin{flushleft}
+\section*{\large {Objectives}}
+
+
+The objective of the proposed project are, 
+\begin{itemize}
+    \item Symmetric Encryption
+    \item  Asymmetric Encryption
+\item \item
+\end{itemize}
+\end{flushleft}
+
+\newpage
+\begin{flushleft}
+\section*{\large {Methodology}}
+It's always good to make a list before starting a new project. But when it comes to app development, it is important to select the right framework or package that will work with your app.
+
+So Here we are using the Flet  framework for the development and python as programming languge . and the version is 3.10.x 
+
+Now let' s Talk about the core methodology of cryptography 
+Various cryptography techniques have been developed to provide data security to ensure that the data transferred between communication parties is confidential, not modified by an unauthorized party, to prevent hackers from accessing and using their information.  Caesar cipher, mono-alphabetic cipher, homo phonic substitution cipher, Poly alphabetic Cipher, Play fair cipher, rail fence, One-time pad, hill cipher are some of the examples of cryptography techniques.
+
+
+    Confidentiality – It specifies that only the sender and the recipient or recipients should be able to access the message. Confidentiality will get lost if an authorized person can access a message.
+    Authentication – It identifies a user or a computer system so that it can be trusted.
+    Integrity – It checks that a message’s contents must not be altered during its transmission from the sender to the recipient.
+    Non-repudiation – It specifies that the sender of a message cannot be refused having sent it, later on, in the case of a dispute.
+
+\end{flushleft}
+
+\newpage
+\renewcommand\refname{\vskip -1cm}
+\begin{flushleft}
+\section*{\large {References}}
+\bibliographystyle{harvard}
+\bibliography{sample.bib}
+\end{flushleft}
+
+% We thank Prof. Allan A. Struthers at MTU for the style file for the references
+\end{document}
